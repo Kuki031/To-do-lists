@@ -51,7 +51,7 @@ export const rngListFunction = function () {
         const _removeFromArray = randomList.splice(randomNum, 1);
     }
 }
-
+// console.log('...');
 export const getQuotes = async function () {
     try {
         const fetchUrl = await fetch('https://type.fit/api/quotes');
