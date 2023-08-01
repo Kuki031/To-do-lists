@@ -1,0 +1,279 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Lumanosimo', cursive;
+}
+.header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: auto;
+    background: rgb(230,97,115);
+    background: linear-gradient(90deg, rgba(230,97,115,1) 5%, rgba(241,62,62,1) 100%);
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+body {
+    background: rgb(221,62,62);
+    background: linear-gradient(90deg, rgba(221,62,62,0.6643032212885154) 5%, rgba(217,38,74,0.7259278711484594) 100%);
+}
+
+.header > h1, .btn-header {
+    margin: 10px;
+    padding: 10px;
+}
+
+#ul-random li {font-weight: bolder;}
+.btns-head > h1 {
+    font-size: 30px;
+    margin-left: 15px;
+    text-shadow: 1px 1px rgb(236, 223, 223);
+
+}
+
+.btn-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: .4s;
+    border:2px solid rgb(194, 39, 12);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+.btn-header:hover {transform: scale(0.9)};
+#icon {font-size: 65px;}
+
+.btns-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    animation: fadeIn 1s;
+}
+.btns-head:nth-child(2) {margin-left: 12%;}
+
+.hidden {display: none;}
+
+#search {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border:none;
+    transition: .2s;
+}
+#search:hover {
+    background-color: rgb(255, 0, 51);
+    color: whitesmoke;
+}
+#search::placeholder {
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+}
+
+.main-field {
+    display: flex;
+    margin: 20px;
+}
+
+.for-node {
+    pointer-events:none;
+    color: red;
+};
+
+.random-intro {width: 20%;}
+
+.show-lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.show-lists div {margin: auto;}
+
+.generate-lists {width: 20%;}
+
+
+.show-lists .created-list {margin-top: 25px;}
+
+#close-random-div {
+    margin: 10px;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .2s;
+    border: none;
+    border-radius: 10px;
+}
+
+#close-random-div:hover {
+    background-color: rgb(131, 221, 131);
+    color: rgb(0, 0, 0);
+}
+
+
+.random-intro > div {display: flex;}
+.random-intro h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.random-intro > div ul {
+    margin-left: 25px;
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+}
+.random-intro li {
+    padding: 10px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+#wtvr {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-left: 5%;
+    font-weight: bolder;
+    width: 300px;
+}
+
+.random-intro li {
+    animation-duration: 0.5s;
+    animation-name: slidein;
+}
+
+.random-intro { animation: fadeIn 1s; }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+  
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 2%;
+      width: 100%;
+    }
+}
+
+
+.created-list {
+    margin-left: 30%;
+    margin: 25px;
+    border: 2px solid black;
+    /*background: rgb(230,97,115);
+    background: linear-gradient(90deg, rgba(230,97,115,1) 5%, rgba(241,62,62,1) 100%);*/
+    transition: .2s;
+    padding: 20px;
+    animation: fadeIn 1s;
+    border:none;
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px 4px rgb(0, 0, 0);
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+    font-weight: bolder;
+}
+
+.created-list h4 {font-weight: bolder;}
+
+.created-list button {
+    margin: auto;
+    margin-left: 0;
+    margin: 10px;
+}
+
+.created-list ul {
+    list-style: none;
+    animation: fadeIn 1s;
+}
+.created-list li {
+    padding: 10px;
+    margin: 5px;
+    animation: fadeIn 1s;
+    font-weight: bolder;
+}
+
+.btn-edit-list {
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+    font-weight: bolder;
+}
+
+.options {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-weight: bolder;
+    animation: fadeIn 1s;
+    background: rgb(221,41,41);
+    background: linear-gradient(90deg, rgba(221,41,41,1) 5%, rgba(223,89,116,1) 100%);
+    color: whitesmoke;
+    padding: 20px;
+    box-shadow: 1px 1px 2px 2px white;
+    border-radius: 20px;
+}
+
+
+
+.options > p {
+    width: 250px;
+    font-size: 20px;
+    text-shadow: 1px 1px black;
+
+}
+.empty-list {
+    margin-top: 50%;
+    width: 350px;
+    font-weight: bolder;
+    font-size: 25px;
+    animation: fadeIn 1s;
+}
+
+.edit-todo {
+    margin: auto;
+    background-color: inherit;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+.edit-todo:hover {
+    transform: scale(0.9);
+    background-color: lime;
+    border-radius: 10px;
+}
+
+.done {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-right: 50%;
+};

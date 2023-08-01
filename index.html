@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do lists</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📋</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer type="module"></script>
+</head>
+<body>
+
+
+    <section class="header">
+    <div class="btns-head">
+        <h1>📋</h1>
+        <h1>To-Do Lists ___/\__✏️</h1>
+    </div>
+    
+
+
+    <div class="btns-head">
+        <button class="btn-header" data-id="1">Hide all lists 📋</button>
+        <button class="btn-header" data-id="2">+ Add new list 📋</button>
+        <button class="btn-header for-node" data-id="3">Log In 🔑</button>
+        <button class="btn-header for-node" data-id="4">Register 📜</button>
+    </div>
+    </section>
+    
+        <main class="main-field">
+            <div>
+                <button id="close-random-div">Close</button>
+                </div>
+            <div class="random-intro">
+                <div>
+                    <h2>What would you like to do today ?</h2>
+                </div>
+            <div>
+                <ul id="ul-random">
+                </ul>
+            </div>
+                <span id="wtvr"></span>
+            </div>
+           
+
+            <div class="show-lists">
+                <div class="hidden" id="place-search"></div>
+                <section class="options"><p>"Click" to cross to-do from the list ✔️</p> <br>
+                    <p>"Double click" to remove to-do from the list ❌</p> <br>
+                    <p>"Click" on the pen to edit to-do ✏️</p>
+                </section>
+            </div>
+            
+
+<div class="generate-lists">
+
+            <div class="btns-head">
+                <input id="search" type="text" placeholder="Search for list" autocomplete="off">
+                <button id="del" class="btn-header">Delete all</button>
+            </div>
+            <!--
+            <div class="created-list">
+                <h4>Primjerna lista 📋 #1</h4>
+                <button class="btn-edit-list" data-operation="edit">Edit list</button>
+                <button class="btn-edit-list hidden " data-operation="finish">Finish editing</button>
+                <button class="btn-edit-list hidden" data-operation="delete">Delete list</button>
+                <button class="btn-edit-list" data-operation="hide">Show To-dos</button>
+                <div>
+                    <ul>
+                        <li class="done">- Feed the cat <button class="edit-todo hidden">✏️</button></li>
+                        <li class="done">- Buy milk <button class="edit-todo hidden">✏️</button></li>
+                        <li class="done">- Write grocery list <button class="edit-todo hidden">✏️</button></li>
+                        <li class="done">- Mow the lawn <button class="edit-todo hidden">✏️</button></li>
+                        <li class="done">- Lorem ipsum dolor sit amet consectetur adipisicing eli<button class="edit-todo hidden">✏️</button></li>
+                    </ul>
+                </div>
+                <button class="btn-edit-list hidden" data-operation="add-todo">+ Add new to-do</button>
+            </div>
+            --->        
+            </div>
+        </main>
+    </body>
+</html>
